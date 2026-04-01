@@ -1,0 +1,98 @@
+rules:
+- keywords:
+  - aws
+  - amazon web services
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - microsoft
+  - azure
+  - office 365
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - google workspace
+  - gsuite
+  - g suite
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - github
+  - notion
+  - slack
+  - zoom
+  - dropbox
+  - adobe
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - openai
+  - chatgpt
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - apple
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - google ads
+  - facebook ads
+  - meta ads
+  - instagram ads
+  category: Advertising
+  confidence: 0.9
+- keywords:
+  - parking
+  - impark
+  - paybyphone
+  - easypark
+  category: Motor vehcie expenses
+  confidence: 0.9
+- keywords:
+  - shell
+  - esso
+  - petro-canada
+  - petro canada
+  - chevron
+  - husky
+  - pioneer
+  - ultramar
+  - 7-eleven
+  category: Motor vehcie expenses
+  confidence: 0.9
+- keywords:
+  - uber
+  - lyft
+  category: Travel
+  confidence: 0.9
+- keywords:
+  - rogers
+  - telus
+  - bell
+  - fido
+  - koodo
+  category: Telephone and utilties
+  confidence: 0.88
+- keywords:
+  - starbucks
+  - mcdonald
+  - restaurant
+  category: Meals & Entertainment
+  confidence: 0.75
+- keywords:
+  - annual card fee
+  - membership fee
+  category: Business tax, fees, licences
+  confidence: 0.9
+- keywords:
+  - paypal
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - best buy
+  category: Office expenses
+  confidence: 0.9
+- keywords:
+  - patreon
+  category: Other expenses
+  confidence: 0.9

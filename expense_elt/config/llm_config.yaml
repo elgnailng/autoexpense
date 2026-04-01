@@ -1,0 +1,8 @@
+provider: anthropic
+model: claude-sonnet-4-20250514
+batch_size: 10
+max_retries: 3
+initial_backoff_seconds: 2.0
+max_cost_per_run: 5.00
+skip_high_confidence_threshold: 0.85
+temperature: 0.1

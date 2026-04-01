@@ -1,0 +1,63 @@
+# -- Sensitive financial data ------------------------------------------------
+# PDF statements (contain real card transactions)
+*.pdf
+
+# Extracted transaction data (DuckDB database)
+*.duckdb
+*.duckdb.wal
+
+# Pipeline output CSVs (contain real transaction data)
+expense_elt/output/*.csv
+
+# Merchant memory (may accumulate real merchant/spending data)
+expense_elt/state/merchant_memory.csv
+
+# Log files (may contain raw transaction lines)
+expense_elt/logs/parse_errors.log
+expense_elt/logs/duplicates.log
+expense_elt/logs/parse_skipped.log
+expense_elt/logs/app.log
+expense_elt/logs/app.log.*
+
+# Config change history (runtime state)
+expense_elt/config/config_history.jsonl
+
+# Config backups from reset command
+expense_elt/config/backups/
+
+# -- Local tool config ------------------------------------------------------
+.claude/
+
+# -- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# -- Virtual environments ----------------------------------------------------
+.venv/
+venv/
+env/
+.env
+
+# -- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+
+# -- OS ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -- Frontend ----------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.app.tsbuildinfo
+
+# -- Docker volumes ----------------------------------------------------------
+state/
+
+# -- Ngrok -------------------------------------------------------------------
+ngrok/

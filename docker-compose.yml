@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "9743:9743"
+    env_file:
+      - expense_elt/.env
+    volumes:
+      # Persist DuckDB database and merchant memory across restarts
+      - ./expense_elt/state:/app/expense_elt/state
+      # Persist logs
+      - ./expense_elt/logs:/app/expense_elt/logs
+      # Persist exported CSVs
+      - ./expense_elt/output:/app/expense_elt/output
+      # Mount PDF statements (read-only)
+      - ./expense_elt/data:/app/expense_elt/data:ro
+      # Persist config changes (deduction rules may be added at runtime)
+      - ./expense_elt/config:/app/expense_elt/config
+    restart: unless-stopped

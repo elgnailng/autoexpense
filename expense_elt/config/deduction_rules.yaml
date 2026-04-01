@@ -1,0 +1,14 @@
+deduction_rules:
+- name: Phone business use
+  merchant_pattern: rogers
+  deductible_status: partial
+  method: fixed_monthly
+  amount: 97.0
+  start_date: "2024-04-01"
+  category: Telephone and utilties
+- name: Home internet
+  merchant_pattern: telus
+  deductible_status: partial
+  method: percentage
+  percentage: 0.25
+  category: Telephone and utilties
