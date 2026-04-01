@@ -6,7 +6,7 @@ This project processes sensitive financial data (bank statements, transaction hi
 
 ## Reporting Vulnerabilities
 
-If you discover a security vulnerability, please report it by opening a [GitHub Issue](https://github.com/elgnailng/expense-elt/issues) with the label "security".
+If you discover a security vulnerability, please report it by opening a [GitHub Issue](https://github.com/elgnailng/autoexpense/issues) with the label "security".
 
 For sensitive disclosures, please email the maintainer directly rather than opening a public issue.
 

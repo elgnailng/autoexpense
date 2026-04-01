@@ -88,7 +88,7 @@ CLI  Web UIs       output/
 
 ```bash
 # Clone
-git clone https://github.com/elgnailng/expense-elt.git
+git clone https://github.com/elgnailng/autoexpense.git
 cd expense-elt
 
 # Python dependencies
